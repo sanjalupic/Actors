@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/deep_orange_100"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_orange_100"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <TextView
+        android:id="@+id/tvcaption"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Famous actors"
+        android:textSize="37dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/deep_orange_200"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivMeryl_Streep"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/meryl"
+        android:layout_below="@+id/tvcaption"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        />
+            <TextView
+                android:id="@+id/tvMeryl"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Meryl Streep"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/ivMeryl_Streep"
+                android:layout_alignTop="@+id/ivMeryl_Streep"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+            />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_toRightOf="@+id/ivMeryl_Streep"
+                android:layout_alignBottom="@+id/ivMeryl_Streep"
+                android:layout_marginRight="20dp"
+                >
+                    <TextView
+                        android:id="@+id/tvdescription_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:text="@string/description_1"
+                        android:layout_toRightOf="@+id/ivMeryl_Streep"
+                        android:layout_alignBottom="@+id/ivMeryl_Streep"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        />
+             </ScrollView>
+
+    <ImageView
+        android:id="@+id/ivZrinka_Cvitesic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/zrinka"
+        android:layout_below="@+id/ivMeryl_Streep"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        />
+            <TextView
+                android:id="@+id/tvZrinka"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Zrinka Cvitešić"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/ivZrinka_Cvitesic"
+                android:layout_alignTop="@+id/ivZrinka_Cvitesic"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_toRightOf="@+id/ivZrinka_Cvitesic"
+                android:layout_alignBottom="@+id/ivZrinka_Cvitesic"
+                android:layout_marginRight="20dp"
+                >
+                    <TextView
+                        android:id="@+id/tvdescription_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:text="@string/description_2"
+                        android:layout_toRightOf="@+id/ivZrinka_Cvitesic"
+                        android:layout_alignBottom="@+id/ivZrinka_Cvitesic"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        />
+            </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/ivEmilia_Clarke"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/emilia"
+        android:layout_below="@+id/ivZrinka_Cvitesic"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        />
+            <TextView
+                android:id="@+id/tvEmilia"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Emilia Clarke"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/ivEmilia_Clarke"
+                android:layout_alignTop="@+id/ivEmilia_Clarke"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_toRightOf="@+id/ivEmilia_Clarke"
+                android:layout_alignBottom="@+id/ivEmilia_Clarke"
+                android:layout_marginRight="20dp"
+                >
+                    <TextView
+                        android:id="@+id/tvdescription_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="85dp"
+                        android:text="@string/description_3"
+                        android:layout_toRightOf="@+id/ivEmilia_Clarke"
+                        android:layout_alignBottom="@+id/ivEmilia_Clarke"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        />
+            </ScrollView>
+
+
+    <EditText
+        android:id="@+id/etReplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ivEmilia_Clarke"
+        android:gravity="center"
+        android:hint="Add text"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/deep_orange_200"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/rgChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etReplace"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMeryl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meryl Streep"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbZrinka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zrinka Cvitešić"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbEmilia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emilia Clarke"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnReplace"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Replace"
+        android:layout_below="@id/rgChoice"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/deep_orange_200"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/btnBestovie"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Best Movie"
+        android:layout_toRightOf="@+id/btnReplace"
+        android:layout_below="@+id/rgChoice"
+        android:layout_marginVertical="10dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/deep_orange_200"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvBestMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etReplace"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:backgroundTint="@color/deep_orange_200"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>
